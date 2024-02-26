@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>울산관광(UI구현_고주희)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="wrap">
+        <header id="header">
+            <section class="quick">
+                <ul>
+                    <li class="quick01">
+                        <a href="">1330바로가기</a>
+                    </li>
+                    <li class="quick02">
+                        <a href="">검색</a>
+                    </li>
+                    <li class="quick03">
+                        <a href="">계산기</a>
+                    </li>
+                    <li class="quick04">
+                        <button>맨위로</button>
+                    </li>
+                </ul>
+            </section>
+            <div class="h_in">
+                <div class="h_box01">
+                    <a class="all_menu" href="">전체메뉴</a>
+                    <div class="search_box">
+                        <input class="search" type="text"><button class="search_btn">검색하기</button>
+                    </div>
+                </div>
+                <h1><a class="h_logo" href="">로고</a></h1>
+                <div class="weather">
+                    <ul>
+                        <li>
+                            <img src="img/header_weather01.png" alt="오늘날씨">
+                            <p class="today_deg">15</p><sapn>&deg;C</sapn>
+                        </li>
+                        <li>
+                            <img src="img/header_weather02.png" alt="내일날씨">
+                            <p>내일</p>
+                        </li>
+                        <li>
+                            <img src="img/header_weather03.png" alt="모레날씨">
+                            <p>모레</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <main id="main">
+            <section class="main1">
+                <h2>Enjoy ULSAN&#33;</h2>
+                <div class="customize_tour">
+                    <select name="when" id="when">
+                        <option value="now default">
+                            지금
+                        </option>
+                        <option value="spring">
+                            봄에
+                        </option>
+                        <option value="summer">
+                            여름에
+                        </option>
+                        <option value="fall">
+                            가을에
+                        </option>
+                        <option value="winter">
+                            겨울에
+                        </option>
+                    </select>
+                    <p class="customize_txt">사랑하는</p>
+                    <select name="who" id="who">
+                        <option value="couple default">
+                            연인
+                        </option>
+                        <option value="single">
+                            혼자
+                        </option>
+                        <option value="family">
+                            가족
+                        </option>
+                        <option value="friend">
+                            친구
+                        </option>
+                    </select>
+                    <p class="customize_txt">과</p>
+                    <select name="date" id="date">
+                        <option value="day">
+                            당일
+                        </option>
+                        <option value="twodays default">
+                            1박2일
+                        </option>
+                        <option value="threedays">
+                            2박3일
+                        </option>
+                    </select>
+                    <select name="where" id="where">
+                        <option value="nature default">
+                            자연
+                        </option>
+                        <option value="history">
+                            역사
+                        </option>
+                        <option value="exhibit">
+                            전시
+                        </option>
+                        <option value="culture">
+                            문화
+                        </option>
+                    </select>
+                    <p class="customize_txt">을 느껴보세요&#33;</p>
+                </div>
+                <div class="btn_recommend">
+                    <a href="">맞춤형 코스추천</a>
+                </div>
+                <div class="pager_box">
+                    <ul>
+                        <li class="btn_preview"><a href="">이전</a></li>
+                        <li class="pager">
+                            <p class="current">1</p>
+                            <p class="slash">/</p>
+                            <p class="total">3</p>
+                        </li>
+                        <li class="btn_next"><a href="">다음</a></li>
+                        <li class="btn_pause"><a href="">멈춤</a></li>
+                        <li class="btn_play"><a href="">재생</a></li>
+                    </ul>
+                </div>
+            </section>
+            <section class="main2">
+                <ul class="quick_category01">
+                    <li class="cate01">
+                        <a href="">이달의 추천여행지</a>
+                    </li>
+                    <li class="cate02">
+                        <a href="">이달의 축제행사</a>
+                    </li>
+                    <li class="cate03">
+                        <a href="">시티투어 예약</a>
+                    </li>
+                    <li class="cate04">
+                        <a href="">스탬프투어</a>
+                    </li>
+                    <li class="cate05">
+                        <a href="">패키지할인</a>
+                    </li>
+                    <li class="cate06">
+                        <a href="">관광지도 미리보기</a>
+                    </li>
+                </ul>
+                <ul class="quick_category02">
+                    <li class="cate02_01">
+                        <a href="">관광안내소</a>
+                    </li>
+                    <li class="cate02_02">
+                        <a href="">입장권 안내</a>
+                    </li>
+                    <li class="cate02_03">
+                        <a href="">문화관광해설</a>
+                    </li>
+                    <li class="cate02_04">
+                        <a href="">관광지도신청</a>
+                    </li>
+                    <div class="quickCate02_arrow">
+                        <div class="quick_cate02_preview"><button>이전</button></div>
+                        <div class="quick_cate02_next"><button>다음</button></div>
+                    </div>
+                </ul>
+            </section>
+            <section class="main3">
+                <h2 class="m_title">핫플<span class="blue_point">콕콕</span></h2>
+                <p class="m_txt">울산의 핫한 여행지와 맛집을 소개합니다&#33;</p>
+                <ul class="m3_list">
+                    <li>
+                        <a href="">
+                        <p class="m3_list_img"><img src="img/main3_img01.jpg" alt=""></p>
+                        <p class="place_name">
+                            울산대공원
+                        </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <p class="m3_list_img"><img src="img/main3_img02.jpg" alt=""></p>
+                        <p class="place_name">
+                            슬도
+                        </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                        <p class="m3_list_img"><img src="img/main3_img03.jpg" alt=""></p>
+                        <p class="place_name">
+                            주전 몽돌해변
+                        </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                        <p class="m3_list_img"><img src="img/main3_img04.jpg" alt=""></p>
+                        <p class="place_name">
+                            선암호수공원
+                        </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                        <p class="m3_list_img"><img src="img/main3_img05.jpg" alt=""></p>
+                        <p class="place_name">
+                            간절곶
+                        </p>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            <section class="main4">
+                <h2 class="m_title">나만의 여행일정 만들기</h2>
+                <p class="m_txt">나만의 특별한 여행을 일별로 알차게 계획하고<br>친구들과 공유하거나 인쇄할 수 있어요&#33;</p>
+                <a href="">바로가기</a>
+            </section>
+            <section class="main5">
+                <div class="month_event">
+                    <h2 class="m_title">이달의 행사<a href="">더보기</a></h2>
+                    <div class="m5_event">
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <p class="date">10&#45;02</p>
+                                    <p class="name">119안전문화축제&#40;1일차&#41;</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <p class="date">10&#45;03</p>
+                                    <p class="name">119안전문화축제&#40;2일차&#41;</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="event_list">
+                    <ul>
+                        <li class="eventLi01">
+                            <a href="">
+                                <img src="img/event_img01.jpg" alt="">
+                                <div class="event_content_txt">
+                                    <p class="event_name">119 안전문화축제</p>
+                                    <p class="event_txt">보고, 듣고, 느끼는 오감만족형 안전체험의<br>장을 마련하여 안전문화의식을 확산하고자<br>개최하는 "2021 울산119안전문화축제"</p>
+                                    <p class="event_date">2023&#45;10&#45;02~2023&#45;10&#45;03</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="eventLi02">
+                            <a href="">
+                                <img src="img/event_img02.jpg" alt="">
+                                <div class="event_content_txt">
+                                    <p class="event_name">2023년 울산 공업축제</p>
+                                    <p class="event_txt">울산의 과거와 현재, 미래를 보여주고<br>산업도시 울산의 정체성을 나타내는 울산의<br>대표축제</p>
+                                    <p class="event_date">2023&#45;06&#45;01~2023&#45;06&#45;04</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="eventLi03">
+                            <a href="">
+                                <img src="img/event_img03.jpg" alt="">
+                                <div class="event_content_txt">
+                                    <p class="event_name">간절곶 해맞이 축제</p>
+                                    <p class="event_txt">간절곶은 새해 한반도 육지부에서 해가 가장<br>먼저 뜨는 곳으로 매년 축제 때 마다 전국에<br>서 관광객들이 방문한다.</p>
+                                    <p class="event_date">2023&#45;12&#45;31~2024&#45;01&#45;01</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="m5_btn">
+                    <div class="m5_btn_preview"><button>이전</button></div>
+                    <div class="m5_btn_next"><button>다음</button></div>
+                </div>
+            </section>
+            <section class="main6">
+                <h2 class="m_title"><span class="blue_point">정보를 한눈에&#33;</span> 울산 여행 이모저모</h2>
+                <div class="m6_box">
+                    <div class="left_content">
+                        <ul>
+                            <li class="m6_lcLi01">
+                                <a href="">
+                                    <p class="m6_txt">내·외국인 관광객들에게<br>
+                                        다양한 국내여행 정보를 안내하는<br>
+                                        전화상담 및 실시간 문자채팅 서비스
+                                    </p>
+                                    <p class="m6_link">바로가기</p>
+                                </a>
+                            </li>
+                            <li class="m6_lcLi02">
+                                <a href="">
+                                    <p class="m6_txt_point">응급의료포털</p>
+                                    <p class="m6_txt">응급의료정보 제공 서비스</p>
+                                    <p class="m6_link">바로가기</p>
+                                </a>
+                            </li>
+                            <li class="m6_lcLi03">
+                                <a href="">
+                                    <p class="m6_txt_point">
+                                        울산광역시<br>
+                                        주요 응급의료기관<br>
+                                    </p>
+                                    <p class="m6_link">바로가기</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="right_content">
+                        <ul>
+                            <li class="m6_rcLi01">
+                                <a href="">
+                                    <p class="m6_txt_point">먹거리 핫플레이스</p>
+                                    <p class="m6_txt">빼놓을 수 없는 맛집투어&#33;</p>
+                                </a>
+                            </li>
+                            <li class="m6_rcLi02">
+                                <a href="">
+                                    <p class="m6_txt_point">숙소 찾아보기</p>
+                                    <p class="m6_txt">다양한 숙소</p>
+                                </a>
+                            </li>
+                            <li class="m6_rcLi03">
+                                <a href="">
+                                    <p class="m6_txt_point">울산 관광택시</p>
+                                </a>
+                            </li>
+                            <li class="m6_rcLi04">
+                                <a href="">
+                                    <p class="m6_txt_point">울산 특산품</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer id="footer">
+            <section class="footer1">
+                <div class="f_in">
+                    <div class="f1_box_left">
+                        <ul>
+                            <li>
+                                <a href="">울산시 여행 및 홍보</a>
+                            </li>
+                            <li>
+                                <a href="">구&#183;군 관광누리집</a>
+                            </li>
+                            <li>
+                                <a href="">울산시 문화관광누리집</a>
+                            </li>
+                            <li>
+                                <a href="">관광분야 누리집</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="f1_box_right">
+                        <ul>
+                            <li>
+                                <button>Language</button>
+                            </li>
+                            <li>
+                                <a href="">울산광역시 홈페이지 바로가기</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="footer2">
+                <div class="f_in">
+                    <div class="f2_right">
+                        <p class="f2_logo">로고</p>
+                        <div class="f2_txt">
+                            <ul>
+                                <li>
+                                    <a class="orang_point" href="">개인정보처리방침</a>
+                                </li>
+                                <li>
+                                    <a href="">이용약관</a>
+                                </li>
+                                <li>
+                                    <a href="">저작권안내</a>
+                                </li>
+                                <li>
+                                    <a href="">웹접근성품질인증</a>
+                                </li>
+                            </ul>
+                            <div class="f2_txt_info">
+                                <p class="address">&#40;44675&#41; 울산광역시 남구 중앙로 201 &#40;신정동&#41;</p>
+                                <p class="call">대표전화:052&#45;120</p>
+                            </div>
+                            <p class="copyright">Copyright © Ulsan Metropolitan City. All rights reserved&#46;</p>
+                        </div>
+                    </div>    
+                    <div class="f2_sns">
+                        <a class="sns_kakaostory" href="">카카오스토리</a>
+                        <a class="sns_facebook" href="">페이스북</a>
+                        <a class="sns_twitter" href="">트위터</a>
+                        <a class="sns_instagram" href="">인스타그램</a>
+                        <a class="sns_youtube" href="">유튜브</a>
+                    </div>
+                </div>
+            </section>
+        </footer>
+    </div>
+</body>
+</html>
